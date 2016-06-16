@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.map.ajaykrhansda.navigationapp.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/satalite_view"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="satalite"/>
+
+    <Button
+        android:id="@+id/terrain_view"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@id/satalite_view"
+        android:text="terrain"/>
+
+    <Button
+        android:id="@+id/map_view"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@id/terrain_view"
+        android:text="map"/>
+    <Button
+        android:id="@+id/hybrid_view"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@id/map_view"
+        android:text="hybrid"/>
+</RelativeLayout>
